@@ -1,0 +1,62 @@
+# ------------------------------------------------------------
+#
+#
+# 				ADD TO 'config.h' 
+# 
+# 	change the contents of 'static const char *colorname[]'
+#	
+# ------------------------------------------------------------
+
+# ------------------------------------------------------------
+# 	 			have another terminal? 			
+#
+# 	just do the same for that, replace the colors in your terminal settings/config
+#
+# ------------------------------------------------------------
+
+
+
+
+/* Terminal colors (16 first used in escape sequence) */
+static const char *colorname[] = {
+
+  /* 8 normal colors */
+  [0] = "#111221", /* black   */
+  [1] = "#1a1b2d", /* red     */
+  [2] = "#292c46", /* green   */
+  [3] = "#3f4367", /* yellow  */
+  [4] = "#5c6090", /* blue    */
+  [5] = "#8285ad", /* magenta */
+  [6] = "#afb1ca", /* cyan    */
+  [7] = "#e1e2eb", /* white   */
+
+  /* 8 bright colors */
+  [8]  = "#b9b67a", /* black   */
+  [9]  = "#777ec4", /* red     */
+  [10] = "#ec8061", /* green   */
+  [11] = "#7b81c3", /* yellow  */
+  [12] = "#a4a8d8", /* blue    */
+  [13] = "#a7acea", /* magenta */
+  [14] = "#69bc8c", /* cyan    */
+  [15] = "#55a578", /* white   */
+
+  /* special colors */
+  [256] = "#090a15", /* background */
+  [257] = "#cfd1e0", /* foreground */
+};
+
+/*
+ * Default colors (colorname index)
+ * foreground, background, cursor
+ */
+static unsigned int defaultfg = 257;
+static unsigned int defaultbg = 256;
+static unsigned int defaultcs = 257;
+
+/*
+ * Colors used, when the specific fg == defaultfg. So in reverse mode this
+ * will reverse too. Another logic would only make the simple feature too
+ * complex.
+ */
+static unsigned int defaultitalic = 7;
+static unsigned int defaultunderline = 7;
