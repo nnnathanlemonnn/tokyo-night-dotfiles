@@ -13,10 +13,10 @@ https://github.com/nnnathanlemonnn/tokyo-night-dotfiles.git
 #### rofi 
 > A window switcher, application launcher and dmenu replacement
 > Custom Rofi theme.. based on: 
->- Qball's dmenu rofi theme
- ![rofi](assets/rofidark10.png)
->- adi1090x powermenu
- ![powermenu](assets/rofipowmen10dark.png)
+##### Qball's dmenu rofi theme
+> ![rofi](assets/rofidark10.png)
+##### adi1090x powermenu
+> ![powermenu](assets/rofipowmen10dark.png)
 #### tint2
 > Basic, good-looking task manager for WMs
 >-	 Custom made tint2 bar
