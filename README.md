@@ -54,10 +54,12 @@
 - the backgrounds folder is just the wallpaper i used
 
 ## project status
-- still work in progress, testing, also finding & fixing bugs
 - report if there's a bug/issues
- 
 
+## links & reference
+
+- [adi1090x's rofi themes] ( https://github.com/adi1090x/rofi.git)
+- [davatorium's rofi theme] (https://github.com/davatorium/rofi-themes.git)
 
 
 
