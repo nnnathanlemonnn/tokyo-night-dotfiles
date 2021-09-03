@@ -1,0 +1,46 @@
+/**
+ * ROFI Color theme
+ * User: nnnathanlemonn
+ * Copyright: ---
+ */
+* {
+    background-color:      #090a15;
+    border-color:          White;
+    text-color:           White;
+    font:            "Iosevka 9";
+}
+
+window {
+    anchor:     southwest;
+    location:   southwest;
+    width:      18%;
+    padding:    10px;
+    border:     	10px;
+    border-color: 	rgba (0, 0, 0, 0%);
+    border-radius: 10px;
+    children:   [ horibox ];
+}
+
+horibox {
+    orientation: horizontal;
+    children:   [  listview ];
+}
+
+listview {
+    layout:     horizontal;
+    spacing:    5px;
+    lines:      100;
+}
+
+entry {
+    expand:     false;
+    width:      10em;
+}
+
+element { 
+    border-color: white;
+    padding: 0px 5px;
+}
+element selected {
+   border-color: white;
+}
