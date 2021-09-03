@@ -121,14 +121,40 @@ on your machine, after that, go to ```.config/rofi/powermenu```.
 
 > configure the ```powermenu.sh``` script 
 
-```bash
-#change the theme, 
+
+``` bash
 theme="dmenu-forked-powermenu"
+dir="$HOME/.config/rofi/powermenu"
+
+# random colors
+#styles=($(ls -p --hide="colors.rasi" $dir/styles))
+#color="${styles[$(( $RANDOM % 8 ))]}"
+
+# comment this line to disable random colors
+#sed -i -e "s/@import .*/@import \"$color\"/g" $dir/styles/colors.rasi
+
+# comment these lines to disable random style
+#themes=($(ls -p --hide="powermenu.sh" --hide="styles" --hide="confirm.rasi" --hide="message.rasi" $dir))
+#theme="${themes[$(( $RANDOM % 24 ))]}"
+
 ```
 
-> 
-n
-  
+> make sure these random commands are commented, use '#' to comment. now save and quit
+> test it by 
+
+```
+$ ./powermenu.sh
+```
+
+> if it works, copy ```powermenu.sh``` to ```/usr/bin/```
+
+> now add it to your window manager config (i3)
+
+```config
+bindsym $mod+Shift+e exec --no-startup-id powermenu.sh
+```
+
+> now test it (mine's win+shift+e)
 
 ## note
 
