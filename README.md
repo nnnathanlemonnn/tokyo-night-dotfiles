@@ -1,8 +1,6 @@
 # Tokyo Night Dotfiles
 ## description:
 > a simple dark theme rice configuration for *nix
--
-
 
 >- clone this repository
 
