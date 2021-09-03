@@ -1,6 +1,6 @@
 # Tokyo Night Dotfiles
 ## description:
-> a simple dark theme rice configuration for *nix
+> a simple dark theme rice configuration for linux
 
 - clone this repository
 
@@ -91,6 +91,14 @@ https://github.com/sdhand/picom
 https://github.com/davatorium/rofi
 ```
 
+- w3m & image magick (optional, if you want images on neofetch)
+
+``` bash
+$ sudo pacman -S w3m
+
+Ubuntu/Debian based
+$
+```
 #### install
 - rofi
 
@@ -115,9 +123,9 @@ bindsym $mod+d exec --no-startup-id rofi -show run
 - rofi powermenu
 
 > clone adi1090x's repo ```https://github.com/adi1090x/rofi.git``` and install it
-on your machine, after that, go to ```.config/rofi/powermenu```.
+on your machine, after that, go to ```~/.config/rofi/powermenu```.
 
-> move/copy 'dmenu-forked-powermenu.rasi' from this repo to ```.config/rofi/powermenu```
+> move/copy 'dmenu-forked-powermenu.rasi' from this repo to ```~/.config/rofi/powermenu```
 
 > configure the ```powermenu.sh``` script 
 
@@ -139,16 +147,13 @@ dir="$HOME/.config/rofi/powermenu"
 
 ```
 
-> make sure these random commands are commented, use '#' to comment. now save and quit
-> test it by 
+> make sure these random commands are commented, use '#' to comment. now save and quit. test it by 
 
 ```
 $ ./powermenu.sh
 ```
 
-> if it works, copy ```powermenu.sh``` to ```/usr/bin/```
-
-> now add it to your window manager config (i3)
+> if it works, copy ```powermenu.sh``` to ```/usr/bin/```. now add it to your window manager config (i3)
 
 ```config
 bindsym $mod+Shift+e exec --no-startup-id powermenu.sh
@@ -156,18 +161,21 @@ bindsym $mod+Shift+e exec --no-startup-id powermenu.sh
 
 > now test it (mine's win+shift+e)
 
+
+- tint2
+
+> copy ```tokyo-night.tint2rc``` from this repo to ```~/.config/tint2/```. select the theme by running 'tint2conf'
+
+- neofetch
+
+
 ## note
 
 ## project status
+- still work in progress, testing, also finding & fixing bugs
 
 
 
-
-
-## links
-
-- [adi1090x rofi theme](https://github.com/adi1090x/rofi.git)
-- [cava console visualizer](https://github.com/karlstav/cava.git)
 
 
 
