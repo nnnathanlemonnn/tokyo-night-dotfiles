@@ -47,6 +47,13 @@
 #### i3-gaps
 >A fork of i3wm tiling window manager with more features, including gaps
 
+## what you will get after cloning this repo:
+
+- rofi theme (powermenu and run)
+- tint2rc
+- wallpaper
+- colorpalatte
+
 ## installation
 - paste ```.config/``` to your home directory
 - paste ```.fonts/``` to your home directoy
